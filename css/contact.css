@@ -1,0 +1,96 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Set a clean font for the body */
+    background-color: #f4f4f4; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Container Styles */
+.container {
+    max-width: 600px;
+    margin: 50px auto; /* Center the container */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input Field Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px; /* Add margin below each input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition for focus effect */
+}
+
+/* Focus Effects */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue shadow on focus */
+}
+
+/* Textarea Specific Styles */
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px; /* Minimum height for the textarea */
+}
+
+/* Button Styles */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px; /* Space above the button */
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+/* Button Hover Effects */
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    button[type="submit"] {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}

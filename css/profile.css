@@ -1,0 +1,362 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header content container */
+.header-content {
+    max-width: 500px; /* Maximum width of the profile form */
+    margin: 50px auto; /* Center horizontally and add vertical margin */
+    padding: 20px; /* Padding around the content */
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text content */
+}
+
+/* Header title */
+.header-content h2 {
+    color: #333; /* Darker text color */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Font size of heading */
+}
+
+/* Styling for paragraph */
+.header-content p {
+    font-size: 18px; /* Size of the text for the username display */
+    color: #555; /* Slightly muted grey color */
+    margin-bottom: 15px; /* Space below the paragraph */
+}
+
+/* Form labels */
+.header-content label {
+    display: inline-block; /* Make label take its own space */
+    width: 150px; /* Width for alignment with input fields */
+    text-align: right; /* Align label text to the right */
+    font-weight: bold; /* Bold font for labels */
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Form input fields */
+.header-content input[type="email"],
+.header-content input[type="date"],
+.header-content input[type="text"] {
+    width: calc(100% - 160px); /* Adjust the width based on label */
+    padding: 8px; /* Padding inside the input field */
+    margin-bottom: 15px; /* Space below each input field */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for input */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Buttons styling */
+.header-content input[type="submit"] {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No borders for buttons */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor for buttons */
+    margin-top: 10px; /* Space above the button */
+}
+
+/* Update button specific styles */
+.header-content input[type="submit"][value="Update"] {
+    background-color: #28a745; /* Green background for update */
+    color: white; /* White text */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Delete button specific styles */
+.header-content input[type="submit"][value="Delete Profile"] {
+    background-color: #dc3545; /* Red background for delete */
+    color: white; /* White text */
+    margin-left: 10px; /* Space between the two buttons */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for both buttons */
+.header-content input[type="submit"]:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .header-content label {
+        width: 100%; /* Labels take full width on small screens */
+        text-align: left; /* Align label text to the left */
+        margin-bottom: 5px; /* Add some space below label */
+    }
+
+    .header-content input[type="email"],
+    .header-content input[type="date"],
+    .header-content input[type="text"] {
+        width: 100%; /* Full width for input fields */
+    }
+
+    .header-content input[type="submit"] {
+        width: 100%; /* Full width for buttons */
+        margin-left: 0; /* Remove left margin for delete button */
+        margin-top: 10px; /* Keep space above the button */
+    }
+}
+
+
+
+
+
+.footer-section {
+    background-color: #1a1a1a; /* Deep gray background */
+    color: #ffffff; /* White text color */
+    padding: 40px 20px;
+    font-family: 'Verdana', sans-serif;
+    border-top: 4px solid #0056b3; /* Accent color top border */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+    flex: 1 1 250px;
+}
+
+.footer-logo h2 {
+    font-size: 28px;
+    color: #0056b3; /* Accent color for logo */
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #dddddd;
+}
+
+/* Footer Links Section */
+.footer-links {
+    flex: 1 1 150px;
+}
+
+.footer-links h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-bottom: 2px solid #0056b3; /* Accent color under heading */
+    padding-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #0056b3; /* Highlight color on hover */
+}
+
+/* Footer Contact Section */
+.footer-contact {
+    flex: 1 1 200px;
+}
+
+.footer-contact h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.footer-contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-contact ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #dddddd;
+}
+
+.footer-contact ul li a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact ul li a:hover {
+    color: #ffffff;
+}
+
+/* Social Media Icons */
+.footer-social {
+    flex: 1 1 150px;
+}
+
+.footer-social h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #0056b3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.footer-social .social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social .social-icons a:hover {
+    background-color: #ffffff;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    color: #aaaaaa;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+.header-section {
+    position: relative;
+    text-align: center;
+}
+
+/* Header Image */
+.header-img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Header Title */
+.header-title {
+    position: absolute;
+    top: 85%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering */
+    font-size: 90px;
+    color: white; /* Text color */
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5); /* Shadow for better contrast */
+}
+
+/* Header Content */
+.header-content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 50px; /* Adjust logo size */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin: 0 15px; /* Space between links */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold; /* Add bold text */
+    transition: color 0.3s;
+    padding: 10px 15px; /* Add padding for box effect */
+    border: 1px solid transparent; /* Add border for box effect */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+.navbar a:hover {
+    color: #000000; /* Change color on hover */
+    border-color: #000000; /* Change border color on hover */
+}
+
+.navbar a:hover {
+    color: #000000; /* Change color on hover */
+}
+
+/* Header Buttons Styling */
+.header-buttons {
+    margin-left: auto; /* Push buttons to the right */
+}
+
+.header-buttons .btn {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.header-buttons .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

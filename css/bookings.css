@@ -1,0 +1,122 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+h2 {
+  
+    text-align: center;
+    margin-bottom: 30px;
+     margin-left: 790px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #00796b;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center; /* Center the entire table content */
+}
+
+/* Table Header */
+thead {
+    background-color: #00796b; /* Dark teal header */
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center; /* Center-align the text in each table cell */
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Table Row Styling */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row color */
+}
+
+tr:hover {
+    background-color: #b2dfdb; /* Hover effect for rows */
+    transition: background-color 0.3s ease;
+}
+
+/* Table Data */
+td {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Action Links */
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Edit and Delete Button Styling */
+a[href*="editBooking"] {
+    background-color: #0288d1; /* Blue for Edit */
+}
+
+a[href*="deleteBooking"] {
+    background-color: #d32f2f; /* Red for Delete */
+}
+
+/* Hover Effect for Action Buttons */
+a:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        background-color: #00796b;
+        text-align: center;
+    }
+
+    td {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    a {
+        margin: 5px 0;
+    }
+}

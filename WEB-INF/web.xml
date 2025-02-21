@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>	 
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4" id="WebApp_ID">
+	<display-name>tourpage</display-name>
+         
+         
+         
+     <welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>tourpage.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>tourpage.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>tourpage.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+
+
+ <display-name>contactUS</display-name>
+
+    <!-- Insert Contact Servlet -->
+    <servlet>
+        <servlet-name>InsertContactServlet</servlet-name>
+        <servlet-class>contactUS.InsertContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertContactServlet</servlet-name>
+        <url-pattern>/insertContact</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Contacts Servlet -->
+    <servlet>
+        <servlet-name>ViewContactsServlet</servlet-name>
+        <servlet-class>contactUS.ViewContactsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewContactsServlet</servlet-name>
+        <url-pattern>/viewContacts</url-pattern>
+    </servlet-mapping>
+
+    <!-- Update Contact Servlet -->
+    <servlet>
+        <servlet-name>UpdateContactServlet</servlet-name>
+        <servlet-class>contactUS.UpdateContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateContactServlet</servlet-name>
+        <url-pattern>/updateContact</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Contact Servlet -->
+    <servlet>
+        <servlet-name>DeleteContactServlet</servlet-name>
+        <servlet-class>contactUS.DeleteContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteContactServlet</servlet-name>
+        <url-pattern>/deleteContact</url-pattern>
+    </servlet-mapping>
+
+    
+
+
+</web-app>
+</element>

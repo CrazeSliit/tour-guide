@@ -1,0 +1,51 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:10px;
+	box-sizing:border-box;
+	font-family:"Poppins", sans-serif;
+}
+
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	background-image:url('../images/nature.webp');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.wrapper{
+	width:500px;
+	background:white;
+	}
+form{
+	
+}
+h2{
+	text-align:center;
+}
+
+.btn1{
+	cursor:pointer;
+	background-color:green;
+	color:white;
+	border:none;
+	padding: 10px 15px;
+	transition:background-color 0.3s;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-right:10px;
+	}
+	
+.btn2{
+    cursor:pointer;
+	background-color:red;
+	color:white;
+	border:none;
+	padding: 10px 15px;
+	transition:background-color 0.3s;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-right:10px;
+}	

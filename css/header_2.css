@@ -1,0 +1,94 @@
+.header-section {
+    position: relative;
+    text-align: center;
+}
+
+/* Header Image */
+.header-img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Header Title */
+.header-title {
+    position: absolute;
+    top: 85%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering */
+    font-size: 90px;
+    color: white; /* Text color */
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5); /* Shadow for better contrast */
+}
+
+/* Header Content */
+.header-content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 50px; /* Adjust logo size */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin: 0 15px; /* Space between links */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold; /* Add bold text */
+    transition: color 0.3s;
+    padding: 10px 15px; /* Add padding for box effect */
+    border: 1px solid transparent; /* Add border for box effect */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+.navbar a:hover {
+    color: #000000; /* Change color on hover */
+    border-color: #000000; /* Change border color on hover */
+}
+
+.navbar a:hover {
+    color: #000000; /* Change color on hover */
+}
+
+/* Header Buttons Styling */
+.header-buttons {
+    margin-left: auto; /* Push buttons to the right */
+}
+
+.header-buttons .btn {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.header-buttons .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

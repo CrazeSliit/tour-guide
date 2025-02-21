@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.header-section {
+    position: relative;
+    text-align: center;
+}
+
+/* Header Image */
+.header-img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Header Title */
+.header-title {
+    position: absolute;
+    top: 85%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering */
+    font-size: 90px;
+    color: white; /* Text color */
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5); /* Shadow for better contrast */
+}
+
+/* Header Content */
+.header-content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 50px; /* Adjust logo size */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin: 0 15px; /* Space between links */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold; /* Add bold text */
+    transition: color 0.3s;
+    padding: 10px 15px; /* Add padding for box effect */
+    border: 1px solid transparent; /* Add border for box effect */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+.navbar a:hover {
+    color: #000000; /* Change color on hover */
+    border-color: #000000; /* Change border color on hover */
+}
+
+.navbar a:hover {
+    color: #000000; /* Change color on hover */
+}
+
+/* Header Buttons Styling */
+.header-buttons {
+    margin-left: auto; /* Push buttons to the right */
+}
+
+.header-buttons .btn {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.header-buttons .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+h1{
+	font-size:50px;
+	color:blue;
+}
+.section{
+	width:100%;
+	min-height:100vh;
+	background-color:#ddd;
+	
+}
+
+.container{
+	width:80%;
+	display:block;
+	margin:auto;
+	padding-top:100px;
+}
+
+.content-section{
+	float:left;
+	width:55%;
+}
+
+.images-section{
+	float:right;
+	width:800px;
+	height:800px
+}
+
+.images-section img{
+	width:800px;
+	height:800px
+}
+
+
+.content_section .title{
+	text-transform:uppercase;
+	font-size:28px;
+}
+.content-section .content h3{
+	   margin-top: 20px;
+	   color:#5d5d5d;
+}
+
+.content-section .content p{
+	margin-top:10px;
+	font-family:sans-serif;
+	font-size:17px;
+	line-height:1.5;
+}
+
+.content-section .content .button {
+   margin-top:30px;
+}
+
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration:none;
+	color:#fff;
+	font-size:25px;
+	letter-spacing:1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+
+
+@media screen and (max-width: 768px){
+	.contaainer{
+	width:80%;
+	display:block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}	
+	
+.content-section .title{
+	text-align:center;
+	font-size:19px;
+}
+
+
+
+
+
+
+
+
